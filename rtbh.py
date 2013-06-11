@@ -11,6 +11,7 @@ import getopt
 import logging
 import logging.config
 
+
 config_file = "/etc/rtbh/config.json"
 reconfig = True
 routes = set([])
@@ -85,4 +86,6 @@ def main():
 		time.sleep(sleeptime)
 
 if __name__ == "__main__":
+	if len(sys.argv) > 1:
+		config_file = sys.argv[1]
 	main()
