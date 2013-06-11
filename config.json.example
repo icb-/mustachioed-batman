@@ -1,0 +1,4 @@
+{
+  "url": "https://localhost/rtbh/routes.cgi"
+  "log": "/etc/rtbh/logging.conf"
+}

@@ -1,0 +1,11 @@
+neighbor 192.168.2.1 {
+	description "send null routes";
+	router-id 192.168.2.66;
+	local-address 192.168.2.66;
+	local-as 65501;
+	peer-as 65500;
+
+	process rtbh {
+		run rtbh.py;
+	}
+}
