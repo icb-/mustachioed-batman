@@ -1,4 +1,10 @@
 {
-  "url": "https://localhost/rtbh/routes.cgi"
-  "log": "/etc/rtbh/logging.conf"
+  "url": "https://localhost/rtbh/cgi/routes.cgi?hop=192.168.2.66"
+  "log": "/etc/rtbh/logging.conf",
+  "database": {
+    "host": "127.0.0.1",
+    "database": "rtbh",
+    "username": "rtbh",
+    "password": "<password>"
+  }
 }

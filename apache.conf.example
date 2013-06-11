@@ -1,0 +1,10 @@
+Alias /rtbh /path/to/www
+
+<Location /rtbh>
+    SSLRequireSSL
+    Options +ExecCGI
+    SetEnv RTBH_CONF /path/to/conf.json
+    Order allow,deny
+    Allow from 127.0.0.1
+    Allow from ::1
+</Location>
